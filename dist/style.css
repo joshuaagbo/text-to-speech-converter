@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #112223;
+}
+
+#header {
+  padding: 1.5rem 0;
+  background: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#header h2 {
+  text-align: center;
+  color: #ddd;
+}
+
+
+.animated {
+  min-width: 100%;
+  height: 200px;
+  background: url('myapp.gif');
+  background-size: contain;
+  background-repeat: repeat-x;
+  opacity: .9;
+  transition: opacity .5s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+#getTextForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: #ddd;
+}
+
+#getTextForm>* {
+  flex: 1;
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 0;
+}
+
+#getTextForm #text {
+  background: #ccc;
+}
+
+#getTextForm .rate,
+#getTextForm .pitch {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.rate .rate-header,
+.pitch .pitch-header {
+  flex: 1;
+}
+
+#pitch,
+#rate {
+  width: 85%;
+  height: 15px;
+  background: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border: 0;
+  border-radius: 10px;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+/* vendor prefix (webkit)*/
+#pitch::-webkit-slider-thumb,
+#rate::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* -moz-appearance: none; */
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #7cd198;
+  border: 0;
+  cursor: pointer;
+}
+
+/* vendor prefix (Moz)*/
+
+#pitch::-moz-range-thumb,
+#rate::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 20%;
+  width: 20px;
+  height: 20px;
+  background: #3bdce7;
+  border: 0;
+}
+
+.pitch-value,
+.rate-value {
+  padding: 8px;
+  display: inline-block;
+  text-align: center;
+  background: #3b5998;
+  border-radius: 50%;
+}
+
+#getTextForm #text {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#getTextForm #btn-submit {
+  text-transform: capitalize;
+  text-align: center;
+  background: #111;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 10px;
+  color: #ddd
+}
