@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #112223;
+  background: #222;
+
 }
 
 #header {
@@ -27,7 +28,7 @@ body {
   background: url('myapp.gif');
   background-size: contain;
   background-repeat: repeat-x;
-  opacity: .9;
+  opacity: .8;
   transition: opacity .5s ease-in-out;
 }
 
@@ -44,6 +45,7 @@ body {
   flex-direction: column;
   margin: auto;
   color: #ddd;
+  opacity: .9;
 }
 
 #getTextForm>* {

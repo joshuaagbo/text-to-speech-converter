@@ -30,6 +30,8 @@ const getVoices = () => {
 if (synth.onvoiceschanged !== "undefined") {
   synth.onvoiceschanged = getVoices;
 }
+// you need to invoke the function  again,
+// so it works on firefox
 getVoices();
 
 // textfield eventHandler
@@ -58,6 +60,7 @@ textForm.addEventListener("submit", e => {
     // when start speaking
     utterThis.onstart = () => {
       btn_submit.innerText = "Speaking...";
+
       Animated.classList.remove('hidden');
       rate.setAttribute("disabled", "disabled");
       pitch.setAttribute("disabled", "disabled");
@@ -69,6 +72,7 @@ textForm.addEventListener("submit", e => {
     utterThis.onend = () => {
       Animated.classList.add('hidden')
       console.log("done speaking");
+
       text.removeAttribute("disabled", "disabled");
       pitch.removeAttribute("disabled", "disabled");
       rate.removeAttribute("disabled", "disabled");
