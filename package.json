@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://therealgemjosh.github.io/text2speech",
+  "homepage": "https://therealgemjosh.github.io/web-speech-api",
   "keywords": [],
   "author": "",
   "license": "ISC",
