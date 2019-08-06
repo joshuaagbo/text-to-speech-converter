@@ -23,9 +23,11 @@ body {
 
 
 .animated {
-  min-width: 100%;
+  width: 70%;
   height: 200px;
   background: url('myapp.gif');
+  margin: auto;
+  margin-bottom: 0;
   background-size: contain;
   background-repeat: repeat-x;
   opacity: .8;
@@ -44,6 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 0;
   color: #ddd;
   opacity: .9;
 }
@@ -61,6 +64,7 @@ body {
 
 #getTextForm #text {
   background: #ccc;
+  margin-top: 0 !important;
 }
 
 #getTextForm .rate,
