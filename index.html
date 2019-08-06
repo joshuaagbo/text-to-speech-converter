@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web speech synthesis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <h2>
+        Text<span style="color: #13aab4;font-size: 40px">2</span
+        ><span style="color: palevioletred">Speech (TTS)</span>
+      </h2>
+    </div>
+    <main>
+      <div class="container">
+        <div class="animated hidden"></div>
+        <form action="" id="getTextForm"  class="main">
+          <textarea
+            id="text"
+            name="text"
+            placeholder="Type in text here...."
+            id="Text"
+            required
+          ></textarea>
+          <div class="rate">
+            <div class="rate-header">
+              <label for="rate">Rate</label>
+              <span class="rate-value"></span>
+            </div>
+            <input
+              type="range"
+              id="rate"
+              step="0.5"
+              value="2.5"
+              min="0.5"
+              max="5"
+            />
+          </div>
+          <div class="pitch">
+            <div class="pitch-header">
+              <label for="pitch">Pitch</label>
+              <span class="pitch-value"></span>
+            </div>
+            <input
+              type="range"
+              id="pitch"
+              step="0.5"
+              value="2.5"
+              min="0.5"
+              max="5"
+            />
+          </div>
+
+          <label for="selectVoice" style="text-align: center;font-size: 28px"
+            >Choose Voice</label
+          >
+          <select id="selectVoice"> </select>
+          <button type="submit" id="btn-submit">Speak</button>
+        </form>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
