@@ -4,26 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web speech synthesis</title>
+    <title>text to speech converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div id="header">
-      <h2>
-        Text<span style="color: #13aab4;font-size: 40px">2</span
-        ><span style="color: palevioletred">Speech (TTS)</span>
+      <h2 style="color: #4258d3">
+        Text<span style="color: palevioletred"> Converter</span>
       </h2>
     </div>
     <main>
       <div class="container">
         <div class="animated hidden"></div>
-        <form action="" id="getTextForm"  class="main">
+        <form action="" id="getTextForm" class="main">
           <textarea
             id="text"
             name="text"
-            placeholder="Type in text here...."
-            id="Text"
+            placeholder="Enter text and press speak to convert...."
             required
           ></textarea>
           <div class="rate">
@@ -62,6 +60,7 @@
           <button type="submit" id="btn-submit">Speak</button>
         </form>
       </div>
+ 
     </main>
     <script src="main.js"></script>
   </body>
