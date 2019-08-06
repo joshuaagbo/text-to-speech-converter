@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://therealgemjosh.github.io/web-speech-api",
+  "homepage": "https://therealgemjosh.github.io/text-to-speech-converter",
   "keywords": [],
   "author": "gemjoshua",
   "license": "MIT",
