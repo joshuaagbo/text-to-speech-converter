@@ -51,7 +51,7 @@ body {
   opacity: 0.9;
 }
 
-#getTextForm > * {
+#getTextForm>* {
   flex: 1;
   display: block;
   max-width: 100%;
@@ -146,15 +146,17 @@ body {
 }
 
 footer {
-  position: absolute;
+
   width: 100%;
   bottom: 0;
   height: 60px;
   background: #333;
+  margin-top: 1rem;
   font-size: small;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 footer .footer-container {
   width: 80%;
   margin: auto;
