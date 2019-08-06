@@ -1,16 +1,24 @@
 {
-  "name": "web-speech-api",
-  "version": "1.0.0",
-  "description": "",
+  "name": "text-to-speech-converter",
+  "version": "0.1.0",
+  "description": "converts text to speech",
   "main": "main.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "homepage": "https://therealgemjosh.github.io/web-speech-api",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "gemjoshua",
+  "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealgemjosh/web-speech-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/therealgemjosh/web-speech-api/issues"
   }
 }
