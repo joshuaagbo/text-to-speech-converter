@@ -27,6 +27,7 @@ body {
   height: 200px;
   background: url('myapp.gif');
   margin: auto;
+  margin-top: 5px;
   margin-bottom: 0;
   background-size: contain;
   background-repeat: repeat-x;
