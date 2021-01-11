@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+#header .header-info{
+  color:#ddd;
+  text-align:center;
+  font-size: 14px;
+}
 
 body {
   background: #222;
