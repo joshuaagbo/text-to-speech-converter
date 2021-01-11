@@ -10,13 +10,13 @@ const rate = document.getElementById("rate");
 const rateValue = document.querySelector(".rate-value");
 const selectVoice = document.querySelector("#selectVoice");
 const btn_submit = document.getElementById("btn-submit");
-const Animated = document.querySelector('.animated');
+const Animated = document.querySelector(".animated");
 // init voices
 let Voices = [];
 const getVoices = () => {
   // get list of voices
   const Voices = synth.getVoices();
-  Voices.forEach(voice => {
+  Voices.forEach((voice) => {
     // create option element;
     const option = document.createElement("option");
     option.innerText = voice.name + `(${voice.lang})`;
@@ -35,7 +35,7 @@ if (synth.onvoiceschanged !== "undefined") {
 getVoices();
 
 // textfield eventHandler
-textForm.addEventListener("submit", e => {
+textForm.addEventListener("submit", (e) => {
   // prevent default behaviour;
   e.preventDefault();
   // create instance of speechUtterance;
@@ -54,30 +54,30 @@ textForm.addEventListener("submit", e => {
       }
     }
     // check for error
-    utterThis.onerror = err => {
+    utterThis.onerror = (err) => {
       console.log("Internal Error: ", err);
     };
     // when start speaking
     utterThis.onstart = () => {
       btn_submit.innerText = "Speaking...";
 
-      Animated.classList.remove('hidden');
+      Animated.classList.remove("hidden");
       rate.setAttribute("disabled", "disabled");
       pitch.setAttribute("disabled", "disabled");
       text.setAttribute("disabled", "disabled");
       btn_submit.setAttribute("disabled", "disabled");
-      selectVoice.setAttribute('disabled', 'disabled')
+      selectVoice.setAttribute("disabled", "disabled");
     };
     // speak ends
     utterThis.onend = () => {
-      Animated.classList.add('hidden')
+      Animated.classList.add("hidden");
       console.log("done speaking");
 
       text.removeAttribute("disabled", "disabled");
       pitch.removeAttribute("disabled", "disabled");
       rate.removeAttribute("disabled", "disabled");
       btn_submit.removeAttribute("disabled", "disabled");
-      selectVoice.removeAttribute('disabled', 'disabled')
+      selectVoice.removeAttribute("disabled", "disabled");
       btn_submit.innerText = "Speak";
     };
     // set pitch and rate
@@ -99,9 +99,9 @@ trackPitchValue();
 trackRateValue();
 
 // update rate and pitch when value changes
-pitch.addEventListener("change", e => {
+pitch.addEventListener("change", (e) => {
   pitchValue.innerText = e.target.value;
 });
-rate.addEventListener("change", e => {
+rate.addEventListener("change", (e) => {
   rateValue.innerText = e.target.value;
 });
